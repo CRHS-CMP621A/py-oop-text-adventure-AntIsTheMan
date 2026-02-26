@@ -18,8 +18,10 @@ ballroom.link_room(dining_hall, "east")
 
 dining_hall.link_room(kitchen,"north")
 
-dining_hall.get_details()
+current_room = kitchen          
 
-kitchen.get_details()
-
-ballroom.get_details()
+while True:		
+    print("\n")         
+    current_room.get_details()         
+    command = input("> ")    
+    current_room = current_room.move (command)
