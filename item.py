@@ -13,5 +13,9 @@ def set_name (self, new_name):
     if new_name != "":
         print("This is an invalid name.")
 
+def set_description (self, item_description):
+    self.description = item_description
 
+def get_description (self):
+    return self.description
         
